@@ -30,10 +30,10 @@
                 id="navigation"
             >
                 <li class="nav-item menu-open">
-                    <a href="#" class="nav-link active">
-                        <i class="nav-icon bi bi-speedometer"></i>
+                    <a href="{{ route('admin.categories.index') }}" class="nav-link active">
+                        <i class="nav-icon fas fa-regular fa-layer-group"></i>
                         <p>
-                            Posts
+                            Категории
                         </p>
                     </a>
                 </li>
