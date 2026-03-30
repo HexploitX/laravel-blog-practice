@@ -29,6 +29,7 @@ Route::group(['namespace' => 'App\Http\Controllers\Admin', 'prefix' => 'admin'],
         Route::get('/{category}', 'ShowController')->name('admin.categories.show');
         Route::get('/{category}/edit', 'EditController')->name('admin.categories.edit');
         Route::patch('/{category}', 'UpdateController')->name('admin.categories.update');
+        Route::delete('/{category}', 'DestroyController')->name('admin.categories.delete');
     });
 });
 
