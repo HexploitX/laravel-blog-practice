@@ -30,13 +30,24 @@
                             <tr class="align-middle">
                                 <td>{{ $category->id }}</td>
                                 <td>{{ $category->title }}</td>
-                                <td>
-                                    <a class="d-inline-flex text-decoration-none" style="margin-right: 5px" href="{{ route('admin.categories.show', $category->id) }}">
+                                <td class="d-flex align-items-center">
+                                    <a class="d-inline-flex text-decoration-none"
+                                       style="margin-right: 10px"
+                                       href="{{ route('admin.categories.show', $category->id) }}">
                                         <i class="fa-regular fa-eye"></i>
                                     </a>
-                                    <a class="d-inline-flex text-decoration-none text-success" href="{{ route('admin.categories.edit', $category->id) }}">
+                                    <a class="d-inline-flex text-decoration-none text-success"
+                                       style="margin-right: 10px"
+                                       href="{{ route('admin.categories.edit', $category->id) }}">
                                         <i class="fa-regular fa-pen-to-square"></i>
                                     </a>
+                                    <form action="{{ route('admin.categories.delete', $category->id) }}" method="POST">
+                                        @csrf
+                                        @method('DELETE')
+                                        <button type="submit" class="text-danger border-0 bg-transparent">
+                                            <i class="fa-solid fa-trash"></i>
+                                        </button>
+                                    </form>
                                 </td>
                             </tr>
                         @endforeach
