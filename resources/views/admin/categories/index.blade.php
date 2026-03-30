@@ -31,8 +31,11 @@
                                 <td>{{ $category->id }}</td>
                                 <td>{{ $category->title }}</td>
                                 <td>
-                                    <a href="{{ route('admin.categories.show', $category->id) }}">
+                                    <a class="d-inline-flex text-decoration-none" style="margin-right: 5px" href="{{ route('admin.categories.show', $category->id) }}">
                                         <i class="fa-regular fa-eye"></i>
+                                    </a>
+                                    <a class="d-inline-flex text-decoration-none text-success" href="{{ route('admin.categories.edit', $category->id) }}">
+                                        <i class="fa-regular fa-pen-to-square"></i>
                                     </a>
                                 </td>
                             </tr>

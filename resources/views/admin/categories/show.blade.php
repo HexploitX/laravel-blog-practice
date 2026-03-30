@@ -14,6 +14,9 @@
             <div class="card mb-4">
                 <div class="card-header">
                     <h3 class="card-title">Категория</h3>
+                    <a style="margin-left: 5px;" class="d-inline-flex text-decoration-none text-success" href="{{ route('admin.categories.edit', $category->id) }}">
+                        <i class="fa-regular fa-pen-to-square"></i>
+                    </a>
                 </div>
                 <!-- /.card-header -->
                 <div class="card-body">
