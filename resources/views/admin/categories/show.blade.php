@@ -13,30 +13,20 @@
         <div class="col-12">
             <div class="card mb-4">
                 <div class="card-header">
-                    <h3 class="card-title">Категории</h3>
+                    <h3 class="card-title">Категория</h3>
                 </div>
                 <!-- /.card-header -->
                 <div class="card-body">
                     <table class="table table-bordered" role="table">
-                        <thead>
-                        <tr>
-                            <th style="width: 10px" scope="col">ID</th>
-                            <th scope="col">Название</th>
-                            <th scope="col">Действия</th>
-                        </tr>
-                        </thead>
                         <tbody>
-                        @foreach($categories as $category)
                             <tr class="align-middle">
+                                <td>ID</td>
                                 <td>{{ $category->id }}</td>
-                                <td>{{ $category->title }}</td>
-                                <td>
-                                    <a href="{{ route('admin.categories.show', $category->id) }}">
-                                        <i class="fa-regular fa-eye"></i>
-                                    </a>
-                                </td>
                             </tr>
-                        @endforeach
+                            <tr class="align-middle">
+                                <td>Название</td>
+                                <td>{{ $category->title }}</td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>
