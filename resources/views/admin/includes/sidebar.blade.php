@@ -37,6 +37,15 @@
                         </p>
                     </a>
                 </li>
+
+                <li class="nav-item menu-open">
+                    <a href="{{ route('admin.tags.index') }}" class="nav-link active">
+                        <i class="nav-icon fas fa-solid fa-tags"></i>
+                        <p>
+                            Теги
+                        </p>
+                    </a>
+                </li>
             </ul>
             <!--end::Sidebar Menu-->
         </nav>
