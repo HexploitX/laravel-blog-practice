@@ -46,6 +46,15 @@
                         </p>
                     </a>
                 </li>
+
+                <li class="nav-item menu-open">
+                    <a href="{{ route('admin.posts.index') }}" class="nav-link active">
+                        <i class="nav-icon far fa-clipboard"></i>
+                        <p>
+                            Посты
+                        </p>
+                    </a>
+                </li>
             </ul>
             <!--end::Sidebar Menu-->
         </nav>
