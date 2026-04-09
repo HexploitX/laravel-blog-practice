@@ -40,7 +40,6 @@ class PostService
             $previewImage = $data['preview_image'] ?? null;
             $mainImage = $data['main_image'] ?? null;
             $tagIds = $data['tag_ids'] ?? null;
-
             unset($data['tag_ids']);
 
             if ($previewImage) {
