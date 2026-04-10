@@ -91,13 +91,19 @@
     <!--begin::Header-->
     <nav class="app-header navbar navbar-expand bg-body">
         <!--begin::Container-->
-        <div class="container-fluid">
+        <div class="container-fluid d-flex justify-content-between w-100">
             <!--begin::Start Navbar Links-->
-            <ul class="navbar-nav">
+            <ul class="navbar-nav d-flex justify-content-between w-100">
                 <li class="nav-item">
                     <a class="nav-link" data-lte-toggle="sidebar" href="#" role="button">
                         <i class="bi bi-list"></i>
                     </a>
+                </li>
+                <li class="nav-item">
+                    <form action="{{ route('logout') }}" method="POST">
+                        @csrf
+                        <input type="submit" value="Выйти" class="btn btn-outline-primary"/>
+                    </form>
                 </li>
             </ul>
             <!--end::Start Navbar Links-->
