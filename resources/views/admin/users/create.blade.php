@@ -31,13 +31,6 @@
                                 <div class="text-danger">{{ $message }}</div>
                             @enderror
                         </div>
-                        <div class="mb-3">
-                            <label for="password" class="form-label">Пароль</label>
-                            <input name="password" type="password" class="form-control" id="password">
-                            @error('password')
-                                <div class="text-danger">{{ $message }}</div>
-                            @enderror
-                        </div>
                         <div class="mb-3 w-50">
                             <label for="role" class="form-label">Выберите права пользователя</label>
                             <select name="role" class="form-select" id="role" required="">
