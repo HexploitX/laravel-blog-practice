@@ -67,4 +67,4 @@ Route::group([
     });
 });
 
-Auth::routes();
+Auth::routes(['verify' => true]);
